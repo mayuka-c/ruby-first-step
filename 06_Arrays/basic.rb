@@ -63,3 +63,23 @@ p fruits # ["Banana"]
 
 fruits.unshift("Apple", "Mango")
 p fruits # ["Apple", "Mango", "Banana"]
+puts
+
+# reverse method
+p fruits.reverse # ["Banana", "Mango", "Apple"]
+
+# sort method
+p fruits.sort # ["Apple", "Banana", "Mango"]
+p fruits.sort.reverse # ["Mango", "Banana", "Apple"]
+puts
+
+# uniq method -> returns unique elements
+p [1, 2, 3, 2, 5].uniq # [1, 2, 3, 5]
+puts
+
+# compact method -> removes nil values in array
+p [1, 2, 3, nil, 5, nil, 10].compact # [1, 2, 3, 5, 10]
+puts
+
+# inject/ reduce method -> derive a single value by combining all array elements
+p [1, 2, 3, 2, 5].reduce(0) { |sum, num| sum + num } # 13
