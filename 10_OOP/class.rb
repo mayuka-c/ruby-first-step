@@ -1,3 +1,5 @@
+# If there exists multiple class with same name, ruby will simply aggregate the functionalities
+
 class Animal
 end
 
